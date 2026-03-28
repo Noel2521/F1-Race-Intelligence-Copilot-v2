@@ -1,0 +1,6 @@
+lambda_package/
+lambda_deployment.zip
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+data/raw/fastf1_cache/
