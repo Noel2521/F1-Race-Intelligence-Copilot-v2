@@ -59,8 +59,34 @@ jupyter notebook notebooks/01_data_pipeline.ipynb
 4. **04_strategy_simulator** — Simulates pit stop windows, 
    finds optimal strategy for any driver
 
+## 🌐 Live API (AWS Lambda + Docker)
+Model deployed as containerised serverless API on AWS.
+
+**Endpoint:** `POST https://a09ujhcyfl.execute-api.us-east-1.amazonaws.com/prod/predict`
+
+**Request:**
+```json
+{
+  "LapNumber": 25,
+  "TyreLife": 15,
+  "CompoundEncoded": 1
+}
+```
+
+**Response:**
+```json
+{
+  "predicted_lap_time_seconds": 93.11,
+  "predicted_lap_time_formatted": "1:33.110",
+  "status": "success"
+}
+```
+
+
 ## 👤 Author
 **Noel Anthony**  
 ML Engineer | MSc University of South Wales  
 Open to relocation | Targeting motorsport & simulation roles  
 [GitHub](https://github.com/Noel2521)
+
+
